@@ -1,6 +1,6 @@
 function App() {
-  const xx = 20;
-  return <div>{xx} hello</div>;
+  const xx = 'VITE to the world';
+  return <div> hello {xx}</div>;
 }
 
 export default App;
