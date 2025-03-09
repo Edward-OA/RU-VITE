@@ -1,2 +1,4 @@
 # RU-VITE
- FRT-DEV
+
+FRT-DEV
+yes
