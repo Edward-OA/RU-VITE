@@ -10,9 +10,9 @@ function AppNav() {
         <li>
           <NavLink to="countries">Countries</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="form">Form</NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

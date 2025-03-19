@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from './CityItem.module.css';
 import { Link } from 'react-router-dom';
-
 const formatDate = (date) =>
   new Intl.DateTimeFormat('en', {
     day: 'numeric',
@@ -12,20 +11,15 @@ const formatDate = (date) =>
 function CityItem({ city }) {
   // if (!city) return null; prevents crash if city is undefined
   console.log(city);
-  const { cityName, emoji, date, id, position } = city;
-  console.log(position);
-
+  const { cityName, emoji, date, id  } = city;
   return (
-    <li>
-      <Link
-        className={styles.cityItem}
-        to={`${id}?lat=${position.lat}&lng=${position.lng}`}
-      >
-        <span className={styles.emoji}>{emoji}</span>
-        <h3 className={styles.name}>{cityName}</h3>
-        <time className={styles.date}>({formatDate(date)})</time>
-        <button className={styles.deleteBtn}>&times;</button>
-      </Link>
+    <li >
+      <Link className={styles.cityItem} to={`${id}`}>
+      <span className={styles.emoji}>{emoji}</span>
+      <h3 className={styles.name}>{cityName}</h3>
+      <time className={styles.date}>({formatDate(date)})</time>
+      <button className={styles.deleteBtn}>&times;</button>
+    </Link>
     </li>
   );
 }
@@ -36,10 +30,6 @@ CityItem.propTypes = {
     emoji: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,
-    position: PropTypes.shape({
-      lat: PropTypes.number.isRequired,
-      lng: PropTypes.number.isRequired,
-    }).isRequired,
   }).isRequired,
 };
 
