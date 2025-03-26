@@ -12,7 +12,7 @@ const formatDate = (date) =>
 
 function City() {
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
 
   const [searchParams, setSearchParams] = useSearchParams();
   const lat = searchParams.get('lat');
