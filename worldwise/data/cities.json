@@ -13,15 +13,51 @@
       }
     },
     {
-      "id": "70d3",
-      "cityName": "Pitillas",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2025-03-27T17:12:40.523Z",
+      "id": "b9f5",
+      "cityName": "In Salah",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2025-03-27T17:43:46.473Z",
       "notes": "",
       "position": {
-        "lat": "42.437865790361364",
-        "lng": "-1.5798300797642375"
+        "lat": "28.454868953875778",
+        "lng": "2.475800447646992"
+      }
+    },
+    {
+      "id": "0381",
+      "cityName": "Koci",
+      "country": "Czechia",
+      "emoji": "🇨🇿",
+      "date": "2025-03-27T17:43:51.548Z",
+      "notes": "",
+      "position": {
+        "lat": "49.948574399409054",
+        "lng": "15.84721120416546"
+      }
+    },
+    {
+      "id": "3e1d",
+      "cityName": "Santa Cruz de Moya",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-03-28T18:43:25.986Z",
+      "notes": "",
+      "position": {
+        "lat": "39.99114602091465",
+        "lng": "-1.2059516217343536"
+      }
+    },
+    {
+      "id": "09b9",
+      "cityName": "Ado Odo/Ota",
+      "country": "Nigeria",
+      "emoji": "🇳🇬",
+      "date": "2025-03-28T18:52:23.872Z",
+      "notes": "",
+      "position": {
+        "lat": "6.502017989229909",
+        "lng": "3.1120554029906793"
       }
     }
   ]

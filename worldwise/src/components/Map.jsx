@@ -17,13 +17,14 @@ import { useUrlPosition } from '../hooks/useUrlPosition';
 import Button from './Button';
 
 function Map() {
-  const { cities } = useCities();
+  const { cities, getFlag } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
     getPosition,
-  } = useGeolocation();
+  } = useGeolocation(); 
+
   const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(
@@ -65,7 +66,8 @@ function Map() {
             key={city.id}
           >
             <Popup>
-              <span>{city.emoji}</span> <span>{city.cityName}</span>
+              <span>{getFlag(city.emoji)}</span> <span>{city.cityName}</span>
+              {/*used the getflag() function created in citiesContext */}
             </Popup>
           </Marker>
         ))}

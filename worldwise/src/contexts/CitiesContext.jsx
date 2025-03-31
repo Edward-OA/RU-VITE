@@ -114,6 +114,8 @@ function CitiesProvider({ children }) {
         body: JSON.stringify(newCity),
         headers: {
           'Content-Type': 'application/json',
+
+          // standard way of sending post request to API 
         },
       });
       const data = await res.json();
@@ -144,6 +146,17 @@ function CitiesProvider({ children }) {
     }
   }
 
+  function getFlag(flag) {
+    if (flag === undefined) return;
+    let countryCode = Array.from(flag, (codeUnit) => codeUnit.codePointAt())
+      .map((char) => String.fromCharCode(char - 127397).toLowerCase())
+      .join('');
+
+    return (
+      <img src={`https://flagcdn.com/24x18/${countryCode}.png`} alt="flag" />
+    );
+  }
+
   return (
     <CitiesContext.Provider
       value={{
@@ -154,6 +167,7 @@ function CitiesProvider({ children }) {
         getCity,
         createCity,
         deleteCity,
+        getFlag,
       }}
     >
       {children}
