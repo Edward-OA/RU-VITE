@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { createContext, useEffect, useState } from 'react';
 
 const CitiesContext = createContext(null);
-const BASE_URL = 'http://localhost:8000';
+const BASE_URL = 'http://localhost:7000';
 
 function CitiesProvider({ children }) {
   const [cities, setCities] = useState([]);
