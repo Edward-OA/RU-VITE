@@ -1,0 +1,14 @@
+the createPortal allows us to create a an 
+invicible portal from the place where the 
+component is in the component tree to another 
+place in the dom tree. So basically only the 
+dom location is affected with the createPortal function
+
+in this case the Modal component is still a 
+child element of the AddCabin component 
+but the location in the dom is changed 
+
+
+the main reason why a portal becomes necessary is 
+to avoid conflit with the css property Overflow set to hidden 
+
