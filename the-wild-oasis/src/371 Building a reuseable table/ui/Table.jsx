@@ -87,10 +87,7 @@ function Row({ children }) {
   );
 }
 
-function Body({ render, data }) {
-  if (!data.length) return <Empty>No data to shw at the moment</Empty>;
-  return <StyledBody>{data.map(render)}</StyledBody>;
-}
+function Body({ children }) {}
 
 Table.Header = Header;
 Table.Footer = Footer;
